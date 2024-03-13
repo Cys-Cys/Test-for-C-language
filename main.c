@@ -23,6 +23,7 @@ void Test_Point_Const();
 int main(){
 	return 0;
 }
+
 void Test_Standard_io_Stream() {
 	/*
 	* 测试gets(),fgets(),puts(),fputs()函数
