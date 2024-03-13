@@ -1,3 +1,28 @@
+#include <stdio.h>
+#include <float.h>
+#include <stdbool.h>  // bool 作为 _Bool 的别名
+#include <stdlib.h>
+#include <ctype.h>  // 测试字符串是否符合要求
+
+
+// #define Q "Hello"
+#define Q "\"Hello\""
+// #define ( {	不可取
+#define CHARS_NUM 80
+
+const int alxy = 50000;  // 具有外部链接的文件作用域的静态变量
+static const int dieqi = 100000;  // 具有内部链接的文件作用域的静态变量
+
+void Test_Float();
+void Test_Bool();
+void Mix_GetC_Scanf();
+void Test_Standard_io_Stream();
+void Test_Num();
+void Test_Point();
+
+int main(){
+	return 0;
+}
 void Test_Standard_io_Stream() {
 	/*
 	* 测试gets(),fgets(),puts(),fputs()函数
