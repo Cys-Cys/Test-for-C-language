@@ -20,7 +20,9 @@ void Test_Standard_io_Stream();
 void Test_Num();
 void Test_Point_Const();
 
-int main(){
+int main(int argc, char * argv[]){
+
+	printf("We are running %s",argv[0]);  // 一般来说，argv第一个字符串应该是本运行程序文件名称
 	return 0;
 }
 
