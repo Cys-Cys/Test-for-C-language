@@ -3,4 +3,5 @@
 
    void Test_File();
    void Test_Point_Const();
+   void Test_Standard_io_Stream();
 # endif
