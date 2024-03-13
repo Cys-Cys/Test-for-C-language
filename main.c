@@ -3,7 +3,7 @@
 #include <stdbool.h>  // bool 作为 _Bool 的别名
 #include <stdlib.h>
 #include <ctype.h>  // 测试字符串是否符合要求
-#include "Test_For_File.h"
+#include "Tests.h"
 
 
 // #define Q "Hello"
