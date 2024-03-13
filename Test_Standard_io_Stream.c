@@ -18,7 +18,7 @@ void Test_Standard_io_Stream() {
 	
 	/* 如果要清除输入时的残留字符，针对于格式化输入，请使用以下参考代码
 	* while(getchar() != '\n')
-	*		continue;
+	*	continue;
 	*/
 	
 	printf("Now Test End.");
