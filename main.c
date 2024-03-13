@@ -88,6 +88,7 @@ void Test_Float() {
 	float a = 1.0 / 3.0;
 	double b = 1.0 / 3.0;
 
+	// 当显示位数不同时，float和double精度差异就产生了
 	printf("%-20.6f %-20.6f\n", a, b);
 	printf("%-20.12f %-20.12f\n", a, b);
 	printf("%-20.16f %-20.16f\n", a, b);
@@ -112,8 +113,7 @@ void Test_Num()
 
 void Test_Point_Const(const int array_outer[]){  // 此处的形参表明array_outer是个指针，同时提醒程序员一般是数组传入
 	int array[CHARS_NUM] = { 0 };
-	int* p7 = (int [5]){1, 2, 3, 4, 5};  // 复合字面量，类似于2，‘Y’等常量，不过其作用域为块作用域
-	
+		
 	int* p1 = array;  // 大部分情况下两者使用共通
 
 	int array1[CHARS_NUM][CHARS_NUM] = { 0 };
@@ -136,6 +136,7 @@ void Test_Point_Const(const int array_outer[]){  // 此处的形参表明array_o
 
 	const int const *p6 = p1;  // 不可更改值，也不能指向其余的地方；相应的const对应相应的要求
 
+	int* p7 = (int [5]){1, 2, 3, 4, 5};  // 复合字面量，类似于2，‘Y’等常量，不过其作用域为块作用域
 	
 	return;
 }
