@@ -18,7 +18,7 @@ void Test_Bool();
 void Mix_GetC_Scanf();
 void Test_Standard_io_Stream();
 void Test_Num();
-void Test_Point();
+void Test_Point_Const();
 
 int main(){
 	return 0;
@@ -104,6 +104,8 @@ void Test_Num()
 
 void Test_Point_Const(const int array_outer[]){  // 此处的形参表明array_outer是个指针，同时提醒程序员一般是数组传入
 	int array[CHARS_NUM] = { 0 };
+	int* p7 = (int [5]){1, 2, 3, 4, 5};  // 复合字面量，类似于2，‘Y’等常量，不过其作用域为块作用域
+	
 	int* p1 = array;  // 大部分情况下两者使用共通
 
 	int array1[CHARS_NUM][CHARS_NUM] = { 0 };
