@@ -5,4 +5,5 @@
    void Test_Point_Const();
    void Test_Standard_io_Stream();
    void Mix_GetC_Scanf();
+   void Test_For_DynamicMem();
 # endif
