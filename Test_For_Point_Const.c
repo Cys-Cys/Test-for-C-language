@@ -1,3 +1,5 @@
+#include "Test_For_File.h"
+
 
 void Test_Point_Const(const int array_outer[]){  // 此处的形参表明array_outer是个指针，同时提醒程序员一般是数组传入
 	int array[CHARS_NUM] = { 0 };
