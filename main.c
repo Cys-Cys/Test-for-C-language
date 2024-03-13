@@ -16,8 +16,6 @@ static const int dieqi = 100000;  // 具有内部链接的文件作用域的静�
 
 void Test_Float();
 void Test_Bool();
-void Mix_GetC_Scanf();
-void Test_Standard_io_Stream();
 void Test_Num();
 
 int main(int argc, char * argv[]){
