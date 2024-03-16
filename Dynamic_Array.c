@@ -4,13 +4,14 @@ void Dynamic_Test_1(){
   int n = 9;
   int m = 3;
 
-  int Array[n][m] = { 0 };  // 动态数组，n。m为变量，但是在数组创建时会固定
+  int Array[n][m] = { 0 };  // 动态数组(VLA)，n。m为变量，但是在数组创建时会固定
 
   int *p1;
   p1 = (int*) malloc(sizeof(int) * n * m);  // 动态堆区赋值，比上述情况更加灵活
+  // p1 = (int*) calloc(m * n, sizeof(int)); calloc会初始化值为0
   free(p1);
 
-  Dynamic_Test_2(n, m. Array);
+  Dynamic_Test_2(n, m, Array);
 
   return;
 }
