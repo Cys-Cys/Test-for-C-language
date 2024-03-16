@@ -6,4 +6,6 @@
    void Test_Standard_io_Stream();
    void Mix_GetC_Scanf();
    void Test_For_DynamicMem();
+   void Dynamic_Test_1();
+   void Dynamic_Test_2();
 # endif
