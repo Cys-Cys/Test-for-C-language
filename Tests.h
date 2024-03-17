@@ -8,4 +8,5 @@
    void Test_For_DynamicMem();
    void Dynamic_Test_1();
    void Dynamic_Test_2();
+   void Test_String_Fun();
 # endif
