@@ -1,8 +1,10 @@
 #include "Tests.h"
 
+#define CHARS_NUM 20
+
 
 void Test_Point_Const(const int array_outer[]){  // 此处的形参表明array_outer是个指针，同时提醒程序员一般是数组传入
-	int array[CHARS_NUM] = { 0 };
+	int array[CHARS_NUM] = {[CHARS_NUM - 3 = 9};  // C99
 		
 	int* p1 = array;  // 大部分情况下两者使用共通
 
@@ -27,6 +29,9 @@ void Test_Point_Const(const int array_outer[]){  // 此处的形参表明array_o
 	const int const *p6 = p1;  // 不可更改值，也不能指向其余的地方；相应的const对应相应的要求
 
 	int* p7 = (int [5]){1, 2, 3, 4, 5};  // 复合字面量，类似于2，‘Y’等常量，不过其作用域为块作用域
+
+	int (*p8)[CHARS_NUM] = (int [2][CHARS_NUM]){ 0 };  // 一个指针
+	int *p9[CHARS_NUM];  // CHARS_NUM个指针构成的数组
 	
 	return;
 }
