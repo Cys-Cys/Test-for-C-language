@@ -1,5 +1,6 @@
 #include "Test.h"
 #include <string.h>
+#include <ctype.h>
 
 #define NUM 20
 
@@ -9,6 +10,17 @@ void Test_String_Fun(){
   */
   char str1[NUM] = "String";  // 字符串字面量最好不要修改。不知道内存含有一个副本还是多个副本
   char str2[NUM];
+  char str3;
+
+  for (int i=0; i < strlen(str1); i++){
+    str3 = str1[i];
+    if(isalpha(str3))
+      printf("this is a alphabetic");
+    else if(isdigital(str3))
+      printf("this is a digital");
+    else if (isspace(str3))
+      printf("this is a space");
+  }
 
   // 复制值
   strcpy(str2, str1);  // 不会检查是否溢出，不行
