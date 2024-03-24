@@ -34,6 +34,7 @@ void Test_File() {
 	/*
 	* fgets(ch1, 20, fp);
 	*/
+	// 写入文件
 	fprintf(fp, "%s\n", ch1);
 
 	while (ch <= 'Z') {
