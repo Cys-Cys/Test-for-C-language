@@ -9,7 +9,7 @@ void Test_Point_Const(const int array_outer[]){  // 此处的形参表明array_o
 	int* p1 = array;  // 大部分情况下两者使用共通
 
 	int array1[CHARS_NUM][CHARS_NUM] = { 0 };
-	int*p2 = array1; // 赋值不可取
+	int* p2 = array1; // 赋值不可取
 	p2 = array1[0]; // 有效
 	
 	int**pp1 = array1;  // 该赋值也有问题
@@ -26,7 +26,7 @@ void Test_Point_Const(const int array_outer[]){  // 此处的形参表明array_o
 	*pp2 = &n;
 	*p5 = 10;
 
-	const int const *p6 = p1;  // 不可更改值，也不能指向其余的地方；相应的const对应相应的要求
+	const int * const p6 = p1;  // 不可更改值，也不能指向其余的地方；相应的const对应相应的要求
 
 	int* p7 = (int [5]){1, 2, 3, 4, 5};  // 复合字面量，类似于2，‘Y’等常量，不过其作用域为块作用域
 
